@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/imageCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    app:contentPadding="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/image_recipe_details"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@string/recipe_image"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/textview_recipe_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/textview_name"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/image_recipe_details" 
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/textview_recipe_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/time_sample"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_recipe_details" />
+
+        <TextView
+            android:id="@+id/textview_recipe_diet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/diet"
+            app:layout_constraintTop_toBottomOf="@id/textview_recipe_name"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textview_recipe_calories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/calories_sample"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_recipe_time" />
+
+        <TextView
+            android:id="@+id/textview_recipe_description_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/lorem"
+            app:layout_constraintTop_toBottomOf="@id/textview_recipe_diet"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/textview_recipe_categories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/categories"
+            app:layout_constraintTop_toBottomOf="@id/textview_recipe_description_details"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/textview_recipe_category_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/category_list"
+            app:layout_constraintTop_toBottomOf="@id/textview_recipe_categories"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/main_variant2"/>
+
+        <ImageButton
+            android:id="@+id/button_increase_serving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_increase"
+            android:background="@android:color/transparent"
+            app:layout_constraintTop_toBottomOf="@id/textview_recipe_category_list"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="100dp"
+            />
+
+        <TextView
+            android:id="@+id/textview_recipe_serving_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/sample_serving_size"
+            app:layout_constraintTop_toBottomOf="@id/textview_recipe_category_list"
+            app:layout_constraintStart_toEndOf="@id/button_increase_serving"
+            android:textStyle="bold"
+            />
+
+        <ImageButton
+            android:id="@+id/button_decrease_serving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_decrease"
+            android:background="@android:color/transparent"
+            app:layout_constraintTop_toBottomOf="@id/textview_recipe_category_list"
+            app:layout_constraintStart_toEndOf="@id/textview_recipe_serving_size"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            />
+
+        <Button
+            android:id="@+id/button_recipe_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/textview_recipe_serving_size"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/instructions"
+            android:backgroundTint="@color/main_variant1"/>
+
+        <Button
+            android:id="@+id/button_recipe_ingredients"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/button_recipe_instructions"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/ingredients"
+            android:backgroundTint="@color/main_variant2"/>
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

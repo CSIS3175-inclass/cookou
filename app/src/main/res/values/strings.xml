@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Cookou</string>
+    <string name="lorem">Sed ut perspiciatis unde omnis iste accusantium doloremque laudantium, dicta sunt explicabo.</string>
+    <string name="button_login">LOGIN</string>
+    <string name="button_register">REGISTER</string>
+    <string name="textview_email">EMAIL</string>
+    <string name="textview_password">PASSWORD</string>
+    <string name="textview_name">NAME</string>
+    <string name="recipe_name">Recipe name</string>
+    <string name="recipe_tags">recipe tags...</string>
+    <string name="remind_me">Remind me</string>
+    <string name="schedule_for">Schedule for</string>
+    <string name="date_format">yyyy-dd-mm</string>
+    <string name="icon">icon</string>
+    <string name="recipe_image">recipe image</string>
+    <string name="time_sample">30mins</string>
+    <string name="diet">diet</string>
+    <string name="calories_sample">100 cal</string>
+    <string name="categories">Categories:</string>
+    <string name="category_list">category 1, cateogry 2, ...</string>
+    <string name="instructions">INSTRUCTIONS</string>
+    <string name="ingredients">INGREDIENTS</string>
+    <string name="sample_serving_size">1 serving size</string>
+    <string name="sample_measurement">2 tbsp</string>
+    <string name="what_best_describes_your_current_nutritional_lifestyle">Which of these meal categories best describes your current or targeted nutritional lifestyle ?</string>
+    <string name="which_cultural_cuisine_excites_you_the_most_for_meal_preparation">Which cultural cuisine do you have the most affinity with or would you like to try ?</string>
+    <string name="get_started">Get started</string>
+    <string name="an_item">An item</string>
+    <string name="to_start_off_please_let_us_know_more_about_you">To start off please let us know more about you..</string>
+</resources>
