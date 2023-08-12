@@ -17,22 +17,14 @@
         android:background="@color/white">
 
         <TextView
-            android:id="@+id/textview_instruction_number"
-            android:layout_width="wrap_content"
+            android:id="@+id/textview_instruction"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="15dp"
-            android:text="1."
-             />
-
-        <CheckBox
-            android:id="@+id/checkbox_instruction"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="14dp"
             android:text="@string/textview_name"
-            app:layout_constraintStart_toEndOf="@id/textview_instruction_number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
 

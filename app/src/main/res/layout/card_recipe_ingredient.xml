@@ -13,38 +13,21 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:background="@color/white">
+        android:background="@color/white"
+        android:padding="15dp">
 
         <TextView
             android:id="@+id/textview_ingredient_name"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
             android:text="@string/ingredients"
-            android:textStyle="bold"
             android:textSize="20sp"
-            />
-
-        <TextView
-            android:id="@+id/textview_ingredient_measure"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/sample_measurement"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textview_ingredient_calories"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="@string/calories_sample"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textview_ingredient_measure"
-            android:layout_marginTop="10dp"
-            />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

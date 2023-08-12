@@ -2,6 +2,7 @@ package com.example.cookou.adapters;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.cookou.R;
+import com.example.cookou.RecipeDetailActivity;
 import com.example.cookou.models.RecipeModel;
 
 import java.util.ArrayList;
@@ -47,8 +49,13 @@ public class RecipesRecyclerAdapter extends RecyclerView.Adapter<RecipesRecycler
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent intent = new Intent(context, RecipeDetailActivity.class);
-//                context.startActivity(intent);
+                SharedPreferences sharedPreferences = context.getSharedPreferences("App_preference_file", Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putString("recipeId",recipe.getIdMeal());
+
+                editor.apply();
+                Intent intent = new Intent(context, RecipeDetailActivity.class);
+                context.startActivity(intent);
             }
         });
 

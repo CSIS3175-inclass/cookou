@@ -1,6 +1,8 @@
 package com.example.cookou.models;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class RecipeModel {
     private List<Meal> meals;
@@ -491,6 +493,56 @@ public class RecipeModel {
         public void setDateModified(String dateModified) {
             this.dateModified = dateModified;
         }
+
+        public Set<String> getAllIngredients(){
+            Set<String> ingredients = new HashSet<>();
+            ingredients.add(getStrIngredient1());
+            ingredients.add(getStrIngredient2());
+            ingredients.add(getStrIngredient3());
+            ingredients.add(getStrIngredient4());
+            ingredients.add(getStrIngredient5());
+            ingredients.add(getStrIngredient6());
+            ingredients.add(getStrIngredient7());
+            ingredients.add(getStrIngredient8());
+            ingredients.add(getStrIngredient9());
+            ingredients.add(getStrIngredient10());
+            ingredients.add(getStrIngredient11());
+            ingredients.add(getStrIngredient12());
+            ingredients.add(getStrIngredient13());
+            ingredients.add(getStrIngredient14());
+            ingredients.add(getStrIngredient15());
+            ingredients.add(getStrIngredient16());
+            ingredients.add(getStrIngredient17());
+            ingredients.add(getStrIngredient18());
+            ingredients.add(getStrIngredient19());
+            ingredients.add(getStrIngredient20());
+            return ingredients;
+        }
+        public Set<String> getAllMeasurements(){
+            Set<String> measures = new HashSet<>();
+            measures.add(getStrMeasure1());
+            measures.add(getStrMeasure2());
+            measures.add(getStrMeasure3());
+            measures.add(getStrMeasure4());
+            measures.add(getStrMeasure5());
+            measures.add(getStrMeasure6());
+            measures.add(getStrMeasure7());
+            measures.add(getStrMeasure8());
+            measures.add(getStrMeasure9());
+            measures.add(getStrMeasure10());
+            measures.add(getStrMeasure11());
+            measures.add(getStrMeasure12());
+            measures.add(getStrMeasure13());
+            measures.add(getStrMeasure14());
+            measures.add(getStrMeasure15());
+            measures.add(getStrMeasure16());
+            measures.add(getStrMeasure17());
+            measures.add(getStrMeasure18());
+            measures.add(getStrMeasure19());
+            measures.add(getStrMeasure20());
+            return measures;
+        }
+
     }
 
 

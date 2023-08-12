@@ -16,6 +16,9 @@
         android:theme="@style/Theme.Cookou"
         tools:targetApi="31">
         <activity
+            android:name=".RecipeDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".RecipeMenuActivity"
             android:exported="false" />
         <activity
